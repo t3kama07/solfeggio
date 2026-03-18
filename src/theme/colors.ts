@@ -1,0 +1,32 @@
+export const colors = {
+  backgroundStart: '#060B20',
+  background: '#0B1026',
+  backgroundDeep: '#0B1026',
+  backgroundPurple: '#1C0F40',
+  backgroundMid: '#121B3D',
+  primaryGlow: '#4DA8FF',
+  accentPink: '#D86CFF',
+  highlightCyan: '#52F1FF',
+  textWhite: '#FFFFFF',
+  softText: '#A0A7C0',
+  nodeText: '#A0DFFF',
+  panel: '#111734',
+  panelStroke: 'rgba(160, 167, 192, 0.18)',
+  ringOuter: 'rgba(77, 168, 255, 0.16)',
+  ringMain: 'rgba(77, 168, 255, 0.56)',
+  ringInner: 'rgba(82, 241, 255, 0.42)',
+  wavePrimary: 'rgba(82, 241, 255, 0.6)',
+  waveSecondary: 'rgba(216, 108, 255, 0.42)',
+  buttonShadow: 'rgba(77, 168, 255, 0.38)',
+  starSoft: 'rgba(255, 255, 255, 0.18)',
+  startGradientStart: '#3FA9FF',
+  startGradientEnd: '#7A5CFF',
+} as const;
+
+export const gradients = {
+  background: [colors.backgroundStart, colors.background, colors.backgroundPurple] as const,
+  button: [colors.startGradientStart, colors.startGradientEnd] as const,
+  panel: ['rgba(77, 168, 255, 0.14)', 'rgba(216, 108, 255, 0.04)'] as const,
+  ring: [colors.highlightCyan, colors.accentPink] as const,
+  wave: [colors.highlightCyan, colors.accentPink] as const,
+} as const;
